@@ -10,10 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnatomiTubuhManusia">
         <activity
+            android:name=".activity.halaman_materi.SubmateriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.halaman_materi.ListMateriActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AnatomiTubuhManusia.WhiteNoActionBarSecond">
+        </activity>
+        <activity
+            android:name=".activity.halaman_materi.MateriActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AnatomiTubuhManusia.WhiteNoActionBarSecond"/>
+        <activity
             android:name=".activity.halaman_utama.HalamanUtamaActivity"
             android:exported="true"
-            android:theme="@style/Theme.AnatomiTubuhManusia.BlueNoActionBar"
-            >
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AnatomiTubuhManusia.BlueNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,8 +36,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

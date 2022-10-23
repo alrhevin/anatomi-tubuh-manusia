@@ -1,0 +1,71 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hill">
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="1" android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="200dp"
+            android:paddingRight="200dp"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/blue_corner"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/materi_level_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/white_corner"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:text="Materi Level 1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/materi_level_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/white_corner"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:text="Materi Level 2"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/materi_level_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/white_corner"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:text="Materi Level 3"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

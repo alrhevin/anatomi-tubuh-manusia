@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hill">
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!-- child views -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Materi Anatomi"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:fontFamily="@font/chunkfiveregular"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:src="@drawable/human_body"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent"
+            android:layout_weight="1" android:orientation="vertical"
+            android:padding="40dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/materi_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/blue_corner"
+                android:padding="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
